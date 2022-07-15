@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="delivery_motiv" id="id-b9c6e6b6251c42faae4a67f0f65b9256" version="4.6.0">
+  <folder name="Strategy" id="id-0949cee4c65a4939a05e13bc078142d7" type="strategy"/>
+  <folder name="Business" id="id-6863b02051b4462cb840d5fd195379bf" type="business"/>
+  <folder name="Application" id="id-e5ccdbcf1ef045a19f572e1296742266" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-32ea524d174c4d8bb895ee7b3b778ec7" type="technology"/>
+  <folder name="Motivation" id="id-044fb9ab037c4fcd95f5349783a756a1" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="Директор по производству" id="id-13c8407877c34fa192556c65a7e740d7"/>
+    <element xsi:type="archimate:Stakeholder" name="клиент" id="id-dc6bb4d484bf402b81067cb584d3396e"/>
+    <element xsi:type="archimate:Driver" name="Расширение клиентской базы" id="id-6083340b572243e59c515fcc098728b9"/>
+    <element xsi:type="archimate:Driver" name="Удовлетворенность клиентов" id="id-1f41a3fcabf4461ba1a87e03c257ba11"/>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-31bc1a79db2548bdb1b0d2756a729c75" type="implementation_migration"/>
+  <folder name="Other" id="id-0c19533e0cdd48d3865f8eaa5e623b80" type="other"/>
+  <folder name="Relations" id="id-bfd54d94b3ab4150a37f92ec2b0f4612" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="id-87fb6f57e6be4054a78ac7ab01723e39" source="id-13c8407877c34fa192556c65a7e740d7" target="id-6083340b572243e59c515fcc098728b9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-b8e452585f444dd291c39baffaa3d27f" source="id-dc6bb4d484bf402b81067cb584d3396e" target="id-1f41a3fcabf4461ba1a87e03c257ba11"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-ae8883bd667b41e899dc2e23a59e9d97" source="id-dc6bb4d484bf402b81067cb584d3396e" target="id-6083340b572243e59c515fcc098728b9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-a08b1ea4eccf4ee09eff0d6e19209aa8" source="id-13c8407877c34fa192556c65a7e740d7" target="id-1f41a3fcabf4461ba1a87e03c257ba11"/>
+  </folder>
+  <folder name="Views" id="id-cb8470b0e6214f9582fca58c422f0b76" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-adf93aa2c9314e1aa08e9846c0d6d4ce">
+      <child xsi:type="archimate:Group" id="id-69369f2006134f6fb6805920806afaaa" name="Заинтересованные стороны" textAlignment="1">
+        <bounds x="168" y="24" width="589" height="145"/>
+        <child xsi:type="archimate:DiagramObject" id="id-77eaa4a01ef744ae8dda64efb4c6ceeb" archimateElement="id-13c8407877c34fa192556c65a7e740d7">
+          <bounds x="108" y="60" width="144" height="59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-aae4dc7c80094fd4b9127936ca6fe31c" source="id-77eaa4a01ef744ae8dda64efb4c6ceeb" target="id-d7d95ca389fb432c9c96bf22317fa458" archimateRelationship="id-87fb6f57e6be4054a78ac7ab01723e39"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fa7f0f5419ff4e4d8b240a07b6bca9cc" source="id-77eaa4a01ef744ae8dda64efb4c6ceeb" target="id-7cced04cdbb04624ac79d2abdf2ddaae" archimateRelationship="id-a08b1ea4eccf4ee09eff0d6e19209aa8"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2af1204147a5400bade7a27389b8f46d" archimateElement="id-dc6bb4d484bf402b81067cb584d3396e">
+          <bounds x="360" y="60" width="144" height="59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0c46191ab28a469bba872e69cef6e3f9" source="id-2af1204147a5400bade7a27389b8f46d" target="id-7cced04cdbb04624ac79d2abdf2ddaae" archimateRelationship="id-b8e452585f444dd291c39baffaa3d27f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fe31ce4c68804d90bde3c93d748b10f8" source="id-2af1204147a5400bade7a27389b8f46d" target="id-d7d95ca389fb432c9c96bf22317fa458" archimateRelationship="id-ae8883bd667b41e899dc2e23a59e9d97"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-eed7d9eef3cf47f081f8aad653a2f116" name="Движущие силы" textAlignment="1">
+        <bounds x="168" y="180" width="613" height="157"/>
+        <child xsi:type="archimate:DiagramObject" id="id-d7d95ca389fb432c9c96bf22317fa458" targetConnections="id-aae4dc7c80094fd4b9127936ca6fe31c id-fe31ce4c68804d90bde3c93d748b10f8" archimateElement="id-6083340b572243e59c515fcc098728b9">
+          <bounds x="72" y="57" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7cced04cdbb04624ac79d2abdf2ddaae" targetConnections="id-0c46191ab28a469bba872e69cef6e3f9 id-fa7f0f5419ff4e4d8b240a07b6bca9cc" archimateElement="id-1f41a3fcabf4461ba1a87e03c257ba11">
+          <bounds x="384" y="61" width="159" height="48"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-c322b5cdd47b4d189e16c2e9edb38556" name="Оценки" textAlignment="1">
+        <bounds x="180" y="348" width="400" height="140"/>
+      </child>
+      <child xsi:type="archimate:Group" id="id-ef2ea60b91d84743908ca07565ca39b9" name="Цели" textAlignment="1">
+        <bounds x="180" y="516" width="400" height="140"/>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
